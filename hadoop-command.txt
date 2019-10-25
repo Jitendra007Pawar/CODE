@@ -1,0 +1,48 @@
+
+1./sbin/start-all.sh
+2.jps 
+	else delete folder tmp/ ../ current 
+	then start data node
+3. Create directory 
+	bin/hadoop fs -mkdir /input123
+
+4. /bin/hadoop dfs -put f1.txt /input123
+
+
+Put count.class and count.jar in the folder of Hadoop
+To comple file
+javac -cp hadoop-core-0.20.2.jar:commons-cli-1.1.jar WordCount.java 
+To create jar file
+jar cf wc.jar WordCount*.class
+
+5.
+  /bin/hadoop jar count.jar count /input123 /output123
+Big output showing done
+6
+/bin/hadoop dfs -ls /output123
+Shows success file so job done
+
+7 now cat file part-0000
+/bin/hadoop dfs -cat /output123/part
+
+Display name and there frequency in it
+
+
+
+//. Hadoop namenode  -format
+// sudo rm -R /tmp/*
+
+
+
+
+
+
+// Commands for the popen MPi
+
+$HOME/opt/usr/local/bin/mpicc -o hello ./hello.c
+$HOME/opt/usr/local/bin/mpirun -np 2 ./hello
+
+
+
+
+
